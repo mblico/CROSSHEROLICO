@@ -1,0 +1,90 @@
+@media only screen and (max-width: 600px) {
+
+
+
+.navBar{
+    position: relative;
+}
+
+.login{
+    display: none;
+}
+.logo{
+    height: 110px;
+    width: 430px;
+    padding-bottom: 25px;
+}
+.menuBar{
+    display: block;
+    grid-column: 8/9;
+    font-size: 50px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+
+.menu{
+    position: absolute;
+    height: 70vh;
+    display: grid;
+    align-items: center;
+    background-color: white;
+    margin-top: 35em;
+    transform: translateX(200% );
+    transition: all 1s;
+    z-index: 1;
+
+}
+.menu li a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px;
+    color: rgb(rgb(1, 1, 1), green, blue);
+    padding: 10px;
+    cursor: pointer;
+}
+.menu-toggle{
+    transform: translateX(170% );
+}
+/* MAIN*/
+
+.info{
+    grid-column: 1/9;
+    grid-row: 2/7;
+    color:rgb(12, 12, 12);
+    align-items: center;
+    margin-left: 5px;
+}
+.hero h3{
+    color:rgb(196, 64, 64);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.hero h1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(242, 252, 248, 0.4);
+   color: white;
+   font-size: 2em;
+   border: 1px solid rgb(1, 1, 1);
+   text-align: center;
+    font-style: italic;
+
+}
+.hero article{
+   
+    font-weight: lighter;
+    padding-top: 4px;
+    text-align: justify;
+    background-color: rgba(242, 252, 248, 0.4);
+    border: 1px solid rgb(1, 1, 1);
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+}
+
+/* FOOTER*/
+.followUs{
+    display: none;
+}
+}

@@ -1,0 +1,245 @@
+body{
+    background-color: rgb(133, 30, 30);
+}
+.mainTittle{
+    background-color: rgb(254, 254, 254);
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align:left;
+}
+#nombre{
+    width: 300px;
+    height: 20px;
+}
+#apellido{
+    width: 300px;
+    height: 20px;
+}
+#pais{
+    width: 300px;
+
+}
+select{
+    width: 300px;
+    height: 20px;
+}
+#tel{
+    width: 300px;
+    height: 20px;
+}
+#mail{
+    width: 300px;
+    height: 20px;
+}
+#comentarios{
+    width: 300px;
+    height: 80px;
+}
+.mainTittle span h1{
+    display: inline-block;
+}
+
+.secondTittle{
+    color:snow;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:900;
+    font-style: italic;
+    text-align: center;   
+}
+.barMenu{
+    display: flex;
+    background-color: rgb(1, 1, 1);
+    border-top:2px solid rgb(133, 30, 30);
+    border-bottom: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style-type:none;
+    list-style-type: none;
+    text-align: center;    
+}
+.barMenu li {
+ display: inline-block;
+ margin-top:  20px;  
+ margin-bottom: 20px;
+ margin-left: 30px;
+ margin-right: 55px; 
+}
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+.barMenu li a{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+}
+.formulario{
+    display:inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    text-align: justify; 
+    margin-left: 50px; 
+}
+.formulario form fieldset{
+    background-color: rgb(180, 72, 72);
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid rgb(5, 5, 5);
+    width: 300px;
+    height: 400px;
+}
+.formulario form fieldset legend{
+    font-weight:600;
+    font-size: 20px;
+    color: white;
+
+}
+
+.formulario form input{
+   margin-bottom: 10px ;
+   padding: 3px;
+}
+.formulario form select{
+    margin-bottom: 10px;
+}
+.formulario div {
+    background-color: rgb(180, 72, 72);
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid rgb(5, 5, 5);
+    font-style:normal;
+    font-size: 15px; 
+}
+
+.switch {
+    --button-width: 3.5em;
+    --button-height: 2em;
+    --toggle-diameter: 1.5em;
+    --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+    --toggle-shadow-offset: 10px;
+    --toggle-wider: 3em;
+    --color-grey: #cccccc;
+    --color-green: #4296f4;
+   }
+   
+   .slider {
+    display: inline-block;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-grey);
+    border-radius: calc(var(--button-height) / 2);
+    position: relative;
+    transition: 0.3s all ease-in-out;
+   }
+   
+   .slider::after {
+    content: "";
+    display: inline-block;
+    width: var(--toggle-diameter);
+    height: var(--toggle-diameter);
+    background-color: #fff;
+    border-radius: calc(var(--toggle-diameter) / 2);
+    position: absolute;
+    top: var(--button-toggle-offset);
+    transform: translateX(var(--button-toggle-offset));
+    box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+    transition: 0.3s all ease-in-out;
+   }
+   
+   .switch input[type="checkbox"]:checked + .slider {
+    background-color: var(--color-green);
+   }
+   
+   .switch input[type="checkbox"]:checked + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+    box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+   }
+   
+   .switch input[type="checkbox"] {
+    display: none;
+   }
+   
+   .switch input[type="checkbox"]:active + .slider::after {
+    width: var(--toggle-wider);
+   }
+   
+   .switch input[type="checkbox"]:checked:active + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+   }
+   
+.leyend{
+    display: inline-block;
+    background-color: rgb(200, 197, 197);
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid rgb(5, 5, 5);
+    font-style: italic;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 450px;
+    height: 500px;
+    margin-bottom: 20px;
+    margin-right: 20px;   
+}
+
+.buttons input{
+    padding: 5px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold; 
+
+}
+
+.bottomMenu{
+    background-color:rgb(254, 254, 254);
+    border-top:2px solid rgb(1, 1, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;    
+}
+
+.bottomMenu li{
+    display: inline-block;
+ margin-top:  20px;  
+ margin-bottom: 20px;
+ margin-left: 55px;
+ margin-right: 55px; 
+   
+}
+.bottomMenu li a{
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+
+}

@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar{
+    background-color:white; 
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns:repeat(8,1fr);
+    align-items: center;
+}
+
+.logo{
+    height: 120px;
+    width: 450px;
+    padding-bottom: 25px;
+}
+
+.menu{
+    grid-column: 2 / 6;
+    display: flex;
+    gap:40px;
+}
+.menu li{
+    list-style-type: none;
+      
+}
+.menu li a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(rgb(1, 1, 1), green, blue);
+    padding: 10px;
+    cursor: pointer;
+}
+.menu li a:hover{
+    color:rgb(141, 48, 48);
+}
+.menuBar{
+    display: none;
+}
+.login{
+    grid-column: 8/9;
+}
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border:1px solid rgb(1, 1, 1);
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+/* CUERPO */
+.body{
+    height: 90vh;
+    background-image: url(../crosshero_imagenes/frase-espalda.jpeg);
+    background-size:contain;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows:repeat(8,1fr);
+    align-items: center;
+}
+
+#nombre{
+    width: 300px;
+    height: 20px;
+}
+#apellido{
+    width: 300px;
+    height: 20px;
+}
+#pais{
+    width: 300px;
+
+}
+select{
+    width: 300px;
+    height: 20px;
+}
+#tel{
+    width: 300px;
+    height: 20px;
+}
+#mail{
+    width: 300px;
+    height: 20px;
+}
+#comentarios{
+    width: 300px;
+    height: 80px;
+}
+
+.formulario h1{
+    
+    color:rgb(196, 64, 64);
+    font-size: 25px;
+    margin-bottom: 15px;
+    background-color: rgba(86, 90, 88, 0.6);
+    border: 2px solid rgb(1, 1, 1);
+    padding-left: 10px;  
+}
+   
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+.formulario{
+    grid-column: 2/10;
+    grid-row: 2/7;
+    color:rgb(12, 12, 12);
+    align-items: center;
+   
+}
+.formulario form fieldset{
+    background-color: rgb(180, 72, 72);
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid rgb(5, 5, 5);
+    width: 400px;
+    height: 400px;
+}
+.formulario form fieldset legend{
+    font-weight:600;
+    font-size: 20px;
+    color: white;
+
+}
+
+.formulario form input{
+   margin-bottom: 10px ;
+   padding: 3px;
+}
+.formulario form select{
+    margin-bottom: 10px;
+}
+.formulario div {
+    background-color: rgb(180, 72, 72);
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid rgb(5, 5, 5);
+    font-style:normal;
+    font-size: 15px; 
+    width: 350px;
+   margin-left: 20px;
+   }
+
+.switch {
+    --button-width: 3em;
+    --button-height: 1.5em;
+    --toggle-diameter: 1.5em;
+    --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+    --toggle-shadow-offset: 10px;
+    --toggle-wider: 3em;
+    --color-grey: #cccccc;
+    --color-green: #4296f4;
+}
+   
+   .slider {
+    display: inline-block;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-grey);
+    border-radius: calc(var(--button-height) / 2);
+    position: relative;
+    transition: 0.3s all ease-in-out;
+   }
+   
+   .slider::after {
+    content: "";
+    display: inline-block;
+    width: var(--toggle-diameter);
+    height: var(--toggle-diameter);
+    background-color: #fff;
+    border-radius: calc(var(--toggle-diameter) / 2);
+    position: absolute;
+    top: var(--button-toggle-offset);
+    transform: translateX(var(--button-toggle-offset));
+    box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+    transition: 0.3s all ease-in-out;
+   }
+   
+   .switch input[type="checkbox"]:checked + .slider {
+    background-color: var(--color-green);
+   }
+   
+   .switch input[type="checkbox"]:checked + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+    box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+   }
+   
+   .switch input[type="checkbox"] {
+    display: none;
+   }
+   
+   .switch input[type="checkbox"]:active + .slider::after {
+    width: var(--toggle-wider);
+   }
+   
+   .switch input[type="checkbox"]:checked:active + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+   }
+   
+.leyend{
+    grid-column:6/12 ;
+    grid-row: 3/7;
+    background-color: rgb(200, 197, 197);
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid rgb(5, 5, 5);
+    font-style: italic;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 600px;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-right: 20px;   
+}
+
+.buttons input{
+    padding: 5px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold; 
+
+}
+/* FOOTER */
+.footer{
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    color:black;
+    border-top: 5px solid rgb(141, 48, 48);
+    justify-content: space-around;
+   
+}
+
+.followUs{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.followUs:hover{
+    color:rgb(141, 48, 48)
+}
+
+.redes{
+    display: flex;
+    justify-content:center;
+    
+}
+.redes i:hover{
+    color:rgb(141, 48, 48)
+}
+.redes i{
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+

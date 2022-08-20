@@ -1,0 +1,127 @@
+@media only screen and (max-width: 600px) {
+
+
+
+    .navBar{
+        position: relative;
+    }
+    
+    .login{
+        display: none;
+    }
+    .logo{
+        height: 110px;
+        width: 430px;
+        padding-bottom: 25px;
+    }
+    .menuBar{
+        display: block;
+        grid-column: 8/9;
+        font-size: 50px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+    
+    
+    .menu{
+        position: absolute;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: white;
+        margin-top: 35em;
+        transform: translateX(200% );
+        transition: all 1s;
+        z-index: 1;
+    
+    }
+    .menu li a{
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 16px;
+        color: rgb(rgb(1, 1, 1), green, blue);
+        padding: 10px;
+        cursor: pointer;
+    }
+    .menu-toggle{
+        transform: translateX(170% );
+    }
+    /* MAIN*/
+    
+    .info{
+        height: 80vh;
+        background-image: url(../crosshero_imagenes/imagen_hombre_index.webp);
+        background-image: linear-gradient(rgba 1,1,1, .8) , (rgba 1,1,1, .2);
+        background-size: cover;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows:repeat(8,1fr);
+        align-items: center;
+        grid-row-gap: 40px;
+    }
+    .info h1{
+    
+        color:rgb(196, 64, 64);
+        font-size: 18px;
+        margin-bottom: 15px;
+        background-color: rgba(86, 90, 88, 0.6);
+        border: 2px solid rgb(1, 1, 1);
+        padding-left: 10px;  
+    }
+
+    #primerBeneficio{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        width: 150px;
+        height: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:lighter;
+        background-color: rgb(222, 217, 217);
+        padding: 20px; 
+        border-radius: 5px;
+        font-size: 12px;
+     
+    }
+    #segundoBeneficio{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        width: 150px;
+        height: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:lighter;
+        background-color: rgb(222, 217, 217);
+        padding: 20px; 
+        border-radius: 5px;
+        font-size: 12px;
+     
+    }
+    #tercerBeneficio{
+        grid-column: 3/4;
+        grid-row: 5/6;
+        width: 150px;
+        height: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:lighter;
+        background-color: rgb(222, 217, 217);
+        padding: 20px; 
+        border-radius: 5px;
+        font-size: 12px;
+     
+    }
+    
+    .info ul{
+        margin-left: 20px;
+        padding: 5px;
+    }
+    
+    
+    
+    
+    
+    
+    /* FOOTER*/
+    .followUs{
+        display: none;
+    }
+    }

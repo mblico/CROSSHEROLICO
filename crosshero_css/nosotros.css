@@ -39,9 +39,12 @@ body{
     color: rgb(rgb(1, 1, 1), green, blue);
     padding: 10px;
     cursor: pointer;
+    transition: all 0.5s;
 }
 .menu li a:hover{
     color:rgb(141, 48, 48);
+    font-size:22px;
+    transform:perspective(10deg);
 }
 .menuBar{
     display: none;
@@ -79,7 +82,7 @@ button {
 /* CUERPO */
 
 .hero{
-    height: 90vh;
+    height: 75vh;
     background-image: url(../crosshero_imagenes/pareja%20entrenando.webp);
     background-size: cover;
     max-width: 100%;
@@ -102,7 +105,16 @@ button {
     background-color: rgba(86, 90, 88, 0.6);
     border: 2px solid rgb(1, 1, 1);
     padding-left: 10px;
+    animation-name: aparecer;
+    animation-duration: 3s;
+    
 
+}
+@keyframes aparecer{
+    0% { opacity: 0;
+    }
+    100% {opacity: 1;
+    }
 }
 .info h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -135,7 +147,7 @@ button {
     display: flex;
     height: 80px;
     align-items: center;
-    background-color: grey;
+    background-image: linear-gradient( to right, rgb(100, 96, 96) , white);
     color:black;
     border-top: 5px solid rgb(141, 48, 48);
     justify-content: space-around;
@@ -147,9 +159,12 @@ button {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    transition: all 0.5s;
 }
 .followUs:hover{
-    color:rgb(141, 48, 48)
+    color:rgb(141, 48, 48);
+    font-size:large;
+    transform:perspective(10deg);
 }
 
 .redes{
@@ -158,13 +173,16 @@ button {
     
 }
 .redes i:hover{
-    color:rgb(141, 48, 48)
+    color:rgb(141, 48, 48);
+    font-size:35px;
+    transform:perspective(10deg);
 }
 .redes i{
     padding-left: 50px;
     padding-right: 50px;
     cursor: pointer;
     font-size: 30px;
+    transition: all 0.5s;
 }
 
 

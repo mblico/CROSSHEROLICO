@@ -77,7 +77,7 @@ button {
 /* CUERPO */
 
 .info{
-    height: 80vh;
+    height: 75vh;
     background-image: url(../crosshero_imagenes/imagen_hombre_index.webp);
     background-image: linear-gradient(rgba 1,1,1, .8) , (rgba 1,1,1, .2);
     background-size: cover;
@@ -113,6 +113,11 @@ button {
     border-radius: 5px;
  
 }
+#primerBeneficio:hover{
+width: 410px;
+height: 210px;
+transition: 0.5s;
+}
 #segundoBeneficio{
     grid-column: 4/6;
     grid-row: 3/7;
@@ -125,6 +130,12 @@ button {
     border-radius: 5px;
  
 }
+#segundoBeneficio:hover{
+    width: 410px;
+    height: 210px;
+    transition: 0.5s;
+    transform: rotate(45dr);
+    }
 #tercerBeneficio{
     grid-column: 6/8;
     grid-row: 3/7;
@@ -137,6 +148,11 @@ button {
     border-radius: 5px;
  
 }
+#tercerBeneficio:hover{
+    width: 410px;
+    height: 210px;
+    transition: 0.5s;
+    }
 
 .info ul{
     margin-left: 20px;

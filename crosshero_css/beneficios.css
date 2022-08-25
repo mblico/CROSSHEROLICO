@@ -21,21 +21,23 @@ body{
     padding-bottom: 25px;
 }
 
-.menu{
-    grid-column: 2 / 6;
-    display: flex;
-    gap:40px;
+.navbar-brand:hover{
+    color:rgb(141, 48, 48);
+    font-size:22px;
+    transform:perspective(10deg);
 }
+
+
 .menu li{
     list-style-type: none;
+    padding: 15px;
       
 }
 .menu li a{
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 20px;
-    color: rgb(rgb(1, 1, 1), green, blue);
-    padding: 10px;
+    color: rgb(rgb(1, 1, 1));
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -43,185 +45,6 @@ body{
     color:rgb(141, 48, 48);
     font-size:22px;
     transform:perspective(10deg);
-}
-.menuBar{
-    display: none;
-}
-.login{
-    grid-column: 8/9;
-}
-button {
-    padding: 1.3em 3em;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border:1px solid rgb(1, 1, 1);
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  button:hover {
-    background-color: #23c483;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
-    transform: translateY(-7px);
-  }
-  
-  button:active {
-    transform: translateY(-1px);
-  }
-
-/* CUERPO */
-
-.info{
-    height: 75vh;
-    background-image: url(../crosshero_imagenes/imagen_hombre_index.webp);
-    background-image: linear-gradient(rgba 1,1,1, .8) , (rgba 1,1,1, .2);
-    background-size: cover;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows:repeat(8,1fr);
-    align-items: center;
-    grid-column-gap: 40px;
-}
-.info h1{
-    color:rgb(196, 64, 64);
-    font-size: 25px;
-    margin-bottom: 15px;
-    background-color: rgba(86, 90, 88, 0.6);
-    border: 2px solid rgb(1, 1, 1);
-    grid-column: 1/8;
-    grid-row: 2/4;
-    margin-left: 50px;
-    animation-name: aparecer;
-    animation-duration: 3s;
-    
-
-}
-@keyframes aparecer{
-    0% { opacity: 0;
-    }
-    100% {opacity: 1;
-    }
-}
-#primerBeneficio{
-    grid-column: 1/4;
-    margin-left: 80px;
-    grid-row: 3/7;
-    width: 400px;
-    height: 200px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:lighter;
-    background-color: rgb(222, 217, 217);
-    padding: 20px; 
-    border-radius: 5px;
-    transition: all 0.5s;
- 
-}
-#primerBeneficio:hover{
-width: 410px;
-height: 210px;
-
-}
-#segundoBeneficio{
-    grid-column: 4/6;
-    grid-row: 3/7;
-    width: 400px;
-    height: 200px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:lighter;
-    background-color: rgb(222, 217, 217);
-    padding: 20px; 
-    border-radius: 5px;
-    transition: all 0.5s;
- 
-}
-#segundoBeneficio:hover{
-    width: 410px;
-    height: 210px;
-  
-    }
-#tercerBeneficio{
-    grid-column: 6/8;
-    grid-row: 3/7;
-    width: 400px;
-    height: 200px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:lighter;
-    background-color: rgb(222, 217, 217);
-    padding: 20px; 
-    border-radius: 5px;
-    transition: all 0.5s;
- 
-}
-#tercerBeneficio:hover{
-    width: 410px;
-    height: 210px;
-   
-    }
-
-.info ul{
-    margin-left: 20px;
-    padding: 5px;
-}
-
-
-
-
-
-
-
-/* FOOTER */
-.footer{
-    display: flex;
-    height: 80px;
-    justify-content: space-around;
-    align-items: center;
-    background-image: linear-gradient( to right, rgb(100, 96, 96) , white);
-    color:black;
-    border-top: 5px solid rgb(141, 48, 48);
-    justify-content: space-around;
-   
-}
-
-.followUs{
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-.followUs:hover{
-    color:rgb(141, 48, 48);
-    font-size:large;
-    transform:perspective(10deg);
-}
-
-.redes{
-    display: flex;
-    justify-content:center;
-   
-    
-}
-.redes i:hover{
-    color:rgb(141, 48, 48);
-    font-size:35px;
-    transform:perspective(10deg);
-}
-
-
-.redes i{
-    padding-left: 50px;
-    padding-right: 50px;
-    cursor: pointer;
-    font-size: 30px;
-    transition: all 0.5s;
 }
 
 
